@@ -1,0 +1,22 @@
+name = "drop"
+compatibility_date = "2024-12-01"
+pages_build_output_dir = "public"
+
+# Bindings dưới đây sẽ được cấu hình qua Cloudflare Dashboard
+# (Settings > Functions > Bindings) sau khi đã tạo R2 bucket và KV namespace.
+# File này chỉ để dùng với `wrangler pages dev` local.
+
+# === Local dev bindings (sẽ override khi deploy) ===
+# Bỏ comment nếu muốn dev local với wrangler:
+#
+# [[r2_buckets]]
+# binding = "BUCKET"
+# bucket_name = "drop-files"
+#
+# [[kv_namespaces]]
+# binding = "HISTORY"
+# id = "your_kv_namespace_id_here"
+#
+# [vars]
+# PASSWORD = "change-me"
+# R2_PUBLIC_URL = "https://pub-xxxx.r2.dev"

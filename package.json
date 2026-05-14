@@ -1,0 +1,13 @@
+{
+  "name": "drop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quick file share — Cloudflare Pages + R2 + KV",
+  "scripts": {
+    "dev": "wrangler pages dev public --compatibility-date=2024-12-01",
+    "deploy": "wrangler pages deploy public"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
